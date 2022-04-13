@@ -1,0 +1,144 @@
+* {
+    margin: 0px
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    -moz-user-select: none; user-select: none;
+    background: center no-repeat;
+}
+h1, h2 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.container__prof {
+    font-size: 30px;
+    margin: auto;
+}
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(fon.jpg) center no-repeat; 
+    background-size: cover;
+}
+.container__info {
+    margin: 15px 0;
+}
+.link {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    transition: color .2s linear;
+}
+.link:hover {
+    color: green;
+}
+
+.container__ss {
+    margin: 10px auto;
+}
+.info {
+    width: 100%;
+    height: 100vh;
+    background: url(fon2.jpg) center no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro__info {
+    margin-left: 1400px;
+    margin-top: auto;
+    position: absolute ;
+    align-items: center;
+    align-items: center;
+}
+.info_h {
+    width: 100%;
+    max-width: 800px;
+    font-size: 30px;
+    margin-left: 200px;
+    text-align: center;   
+}
+.hobby {
+    width: 100%;
+    height: 100vh;
+    background: url(fon3.jpg) center no-repeat;
+    background-size: cover;
+    font-size: 40px;
+    display: flex;
+}
+.hobby_h {
+    margin: 40px;
+}
+.galereya {
+    width: 100%;
+    height: 100vh;
+    background: url(fon4.jpg) center no-repeat;
+    background-size: cover;
+    font-size: 40px;
+    
+}
+#gall {
+    position: relative;
+    padding-top: 50%;
+    -moz-user-select: none; user-select: none;
+  }
+  #gall img {
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    max-width: 24.5%;
+    max-height: 49.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: zoom-in;
+    transition: .2s;
+  }
+  #gall img:nth-child(4n-2) {left: 37.5%;}
+  #gall img:nth-child(4n-1) {left: 62.5%;}
+  #gall img:nth-child(4n) {left: 87.5%;}
+  #gall img:nth-child(n+5) {top: 75%;}
+  
+  #gall img:focus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none;
+    pointer-events: none;
+  }
+  #gall img:focus ~ div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    cursor: zoom-out;
+  }
+  .ya {
+      font-size: 14px;
+      text-decoration: none;
+  }
+  #ya {
+    text-decoration: none;
+    color: #333;
+
+  }
+  @media only screen and (max-width: 1000px) {
+
+    nav {  width: 100%; }
+
+}
